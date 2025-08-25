@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --color-one:#103178;
+    --color-two: #fec700;
+    --color-text: #5b6c8e;
+
+    --font:'Inria Serif', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: var(--font);
+    color: var(--color-text);
+}
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1200px){
+    .container{
+       max-width: 960px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+       max-width: 720px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .container{
+       max-width: 540px;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+       max-width: 100%;
+       padding-left: 15px;
+       padding-right: 15px;
+    }
+}
+
+/* Section One */
+.section-one{
+    background-color: #eff1f4;
+    padding: 200px 0 100px 0;
+
+}
+/* End Section One */
+
+/* Section Two */
+.section-two{
+    background-color: white;
+    padding: 100px 0;
+
+}
+/* End Section Two */
+
+/* Section three */
+.section-three{
+    background-color: #eff1f4;
+    padding: 100px 0;
+}
+/* End section three */
+
+/* Section four */
+
+.section-four{
+    background-color: white;
+    padding: 100px 100px;
+}
+/* End section four */
+
+/* Section-five */
+.section-five{
+    background-color: #eff1f4;
+    padding: 60px 0;
+}
+/* End Section-six*/
+
+.section-six {
+    padding: 80px 0;
+    background-color: white;
+    text-align: center;
+}
+
+/* End Section-six */
+
+/* End Section-seven*/
+
+.section-seven {
+    padding: 80px 0;
+    background-color: #eff1f4;
+    text-align: center;
+}
+
+/* End Section-seven */
+
+/* End Section-eight*/
+
+.section-eight {
+    padding: 60px 0;
+    background-color: white;
+    text-align: center;
+}
+
+/* End Section-eight */
+
+/* End Section-nine*/
+
+.section-nine {
+    padding: 100px 0;
+    background-color: #eff1f4;
+    text-align: center;
+}
+
+/* End Section-ten */
+
+.section-ten {
+    padding: 100px 0;
+    background-color: white;
+    text-align: center;
+}
+
+/* End Section-ten */
+
+/* End Section-eleven */
+
+.section-eleven {
+    padding: 50px 0;
+    background-color: var(--color-one);
+    text-align: center;
+}
+
+/* End Section-eleven */
+
+/* End Section-twelve */
+
+.section-twelve {
+    padding: 30px 0;
+    background-color: white;
+}
+
+/* End Section-twelve */

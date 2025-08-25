@@ -1,0 +1,966 @@
+/*Header */
+.header{
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: white;
+}
+.header-top{
+    background: var(--color-one);
+    color: var(--color-two);
+    font-size:18px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-main .inner-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+
+}
+
+.header-main .inner-logo a{
+    color: var(--color-one);
+    display: flex;
+    align-items: center;
+}
+.header-main .inner-logo span{
+    font-weight: 600;
+    font-size: 22px;
+   
+}
+
+.header-main .inner-logo img{
+ height: 48px;
+ width: auto;
+ margin-right: 10px;
+}
+
+.header-main .inner-menu ul{
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-main .inner-menu ul li{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.header-main .inner-menu ul li a{
+    color: var(--color-one);
+    font-size: 18px;
+}
+
+.header-main .inner-menu ul li a:hover{
+    color: #007bff;
+}
+
+.header-main .inner-contact {
+    font-size: 18px;
+    color: var(--color-text);
+}
+
+.header-main .inner-social ul{
+     margin: 0;
+    padding: 0;
+    display:flex;
+    list-style-type: none;
+   
+}
+
+.header-main .inner-social ul li{
+    margin-left: 15px;
+}
+
+.header-main .inner-social ul li a{
+    color: var(--color-one);
+    font-size: 26px;
+}
+
+.header-main .inner-mobile{
+    display: none;
+    font-size: 24px;
+    color: var(--color-one);
+}
+
+@media (max-width: 768px){
+    .header-top{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px){
+    .header-main .inner-contact{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .header-main .inner-menu{
+        display: none;
+    }
+
+    .header-main .inner-social{
+        display: none;
+    }
+
+    .header-main .inner-mobile{
+        display: block;
+    }
+}
+/* End Header */
+
+/* Buttons */
+.button{
+    background: var(--color-text);
+    color: white;
+    padding: 12px 32px;
+    font-size: 18px;
+    border-radius: 45px;
+    border: 2px solid var(--color-text);
+    display: inline-block;
+}
+.button:hover{
+    color: var(--color-text);
+    background: white;
+}
+
+
+.button-two{
+    background-color: var(--color-two);
+    border-color: var(--color-two);
+}
+
+.button-two:hover{
+    color: var(--color-two);
+}
+
+.button-one{
+    background-color: var(--color-one);
+    border-color: var(--color-one);
+}
+
+.button-one:hover{
+    color: var(--color-one);
+}
+/* End Buttons */
+
+/* Section One */
+
+.section-one .inner-wrap{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.section-one .inner-content{
+    width: 50%;
+}
+
+.section-one .inner-content .inner-title{
+    font-size: 60px;
+    color: var(--color-one);
+}
+
+.section-one .inner-content .inner-desc{
+    font-size: 20px;
+    color: var(--color-one);
+    margin-bottom: 40px;
+}
+
+.section-one .inner-content .inner-list{
+display: flex;
+margin-bottom: 40px;
+}
+.section-one .inner-content .inner-item{
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.section-one .inner-content .inner-item i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.section-one .inner-image{
+    width: 50%;
+    position: relative;
+}
+
+.section-one .inner-image img{
+    width: 100%;
+    height: auto;
+}
+
+.section-one .inner-image .inner-sale{
+    position: absolute;
+    top:0;
+    right: 150px;
+    color:var(--color-one);
+    background: var(--color-two);
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+}
+
+.section-one .inner-image .inner-sale span:nth-child(1){
+    font-size: 22px;
+    font-weight: 600;
+    
+}
+.section-one .inner-image .inner-sale span:nth-child(2){
+    font-size: 42px;
+    font-weight: 600;
+}
+
+@media (max-width: 992px){
+    .section-one .inner-content{
+        width: 100%;
+        order: 1;
+    }
+    .section-one .inner-image{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .section-one .inner-content{
+        text-align: center;
+    }
+
+    .section-one .inner-content .inner-item{
+        justify-content: center;
+    }
+     
+    .section-one .inner-image .inner-sale{
+        right: 36px;
+        width: 84px;
+        height: 84px;
+    }
+
+    .section-one .inner-image .inner-sale span:nth-child(1){
+        font-size: 16px;
+    }
+    .section-one .inner-image .inner-sale span:nth-child(2){
+        font-size: 28px;
+    }
+
+    .section-one .inner-content .inner-title{
+        font-size: 38px;
+    }
+}
+/* End Section One */
+
+/* Section Two */
+
+
+.section-two .inner-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-two .inner-box{
+    width: calc(100% / 3 - 20px);
+    height: 100%;
+    /* aspect-radio: tỉ lệ width/height của element */
+    aspect-ratio: 4/3;
+    position: relative;
+    overflow: hidden;
+}
+.section-two .inner-box img{
+    width: 100%;
+    height: 100%;
+     /* object-fit để ảnh tự co dãn hết width và height mà không bị co dãn */
+    object-fit: cover;
+    transition: all 0.6s;
+    
+}
+
+.section-two .inner-box:hover img{
+    transform: scale(1.1);
+}
+
+.section-two .inner-box .inner-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding:30px;
+}
+
+.section-two .inner-box .inner-tag{
+    background: #139f5d;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.section-two .inner-box .inner-title{
+    color: white;
+    margin-top: 0;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.section-two .inner-box .inner-title2{
+    color: var(--color-one);
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-two .inner-box .inner-sale{
+    color: var(--color-two);
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-two .inner-box .inner-price-new{
+    color: var(--color-two);
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-two .inner-box .inner-price-old{
+    text-decoration: line-through;
+    color: var(--color-text);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 992px){
+    .section-two .inner-wrap{
+        flex-wrap: wrap;
+    }
+    .section-two .inner-box{
+        width: 100%;
+        aspect-ratio: 2/1;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px){
+    .section-two .inner-box{
+        aspect-ratio: 1/1;
+    }
+}
+/* End Section Two */
+
+/* Section three */
+
+ .section-three .inner-text{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-three .inner-text .inner-title{
+    font-size: 48px;
+    color: var(--color-one);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-three .inner-text .inner-desc{
+    font-size: 22px;
+    color: var(--color-text);
+    margin-bottom: 40px;
+}
+
+
+
+.section-three .inner-wrap {
+  display: flex;
+  justify-content: center; /* Để đẩy dàn đều phần dư sang hai bên */
+  gap: 60px;                /* Khoảng cách giữa các div */
+}
+
+.section-three .inner-wrap .inner-box{
+    display: flex;
+    width: calc(70% / 3 - 32px); /* Chiều rộng của mỗi div */
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    /* 3 div => 2 khoảng cách => 2 * 48px = 96px */
+}
+
+.section-three .inner-wrap .inner-box i{
+    font-size: 3rem;
+    color: #5b6c8f;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.section-three .inner-wrap .inner-box span{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: var(--color-one);
+    margin-bottom: 30px;
+}
+
+.section-three .inner-wrap .inner-box .inner-desc{
+    font-size: 1.2rem;
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+/* End Section three */
+
+/* Section four */
+.section-four .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.section-four .container > div{
+    width: 50%;
+}
+
+.section-four .inner-wrap .inner-title{
+    font-size: 64px;
+    color: var(--color-one);
+    margin-bottom: 40px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-top: 60px;
+}
+
+.section-four .inner-wrap .inner-content{
+    font-size: 24px;
+    color: var(--color-one);
+    margin-bottom: 40px;
+    margin-right: 30px;
+    line-height: 1.5;
+}
+
+.section-four  .inner-img img{
+    width: 100%;
+    height: auto;
+}
+
+/* End section four */
+
+/* Section-five */
+
+.section-five .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.section-five .inner-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    background-image: url('/assets/images/features2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1.5rem 1.5rem;
+    color: white;
+    gap: 1rem;
+    flex-wrap: wrap; /* Nếu muốn responsive tốt hơn thì dùng wrap */
+}
+
+/* Tiêu đề */
+.section-five .inner-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    flex: 1;
+}
+
+/* Icon trong tiêu đề */
+.section-five .inner-title i {
+    font-size: 24px;
+}
+
+/* Button */
+.button-three{
+    background-color: green;
+    border-color: green;
+}
+
+.button-three:hover{
+    color: green;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-five .inner-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-five .button.button-three {
+        align-self: flex-end;
+        margin-top: 1rem;
+    }
+}
+
+/* End Section-five */
+
+/* Section six */
+
+.section-six .inner-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color-one);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-six .inner-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Để các item sát nhau */
+    margin: 0 150px; /* Margin 200px ở 2 đầu (tăng gấp đôi từ 100px) */
+    gap: 0; /* Không có khoảng cách giữa các item */
+}
+
+/* Box sản phẩm */
+.section-six .inner-box {
+    width: 20%; /* 5 sản phẩm = 100%/5 = 20% mỗi cái */
+    text-align: left; /* Căn trái như trong hình mẫu */
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Khung giữ tỉ lệ 4:3 */
+.section-six .inner-img {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* Tỉ lệ 4:3 như trong hình mẫu */
+    overflow: hidden;
+    border: 1px solid #e0e0e0; /* Thêm viền cho ảnh */
+    border-bottom: none; /* Không có viền dưới để nối với phần desc */
+}
+
+/* Ảnh nằm giữa và có hiệu ứng zoom */
+.section-six .inner-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.section-six .inner-box:hover .inner-img img {
+    transform: scale(1.1); /* Hiệu ứng zoom nhẹ hơn */
+}
+
+/* Phần mô tả */
+.section-six .inner-desc {
+    padding: 12px 8px;
+    border: 1px solid #e0e0e0; /* Thêm viền như trong hình mẫu */
+    border-top: none; /* Không có viền trên vì ảnh đã có */
+    text-align: left; /* Căn trái */
+}
+
+.section-six .inner-desc .inner-title {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-one);
+    margin-bottom: 10px;
+    line-height: 1.3;
+     text-align: left; /* Căn trái */
+
+}
+
+.section-six .inner-desc .inner-price {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-one);
+    margin-bottom: 10px;
+}
+
+.section-six .inner-desc .star {
+    font-size: 20px;
+    color: #f0c000;
+    margin-bottom: 10px;
+}
+
+/* Responsive cho section-six */
+@media (max-width: 1200px) {
+    .section-six .inner-box {
+        width: calc(25% - 8px); /* 4 sản phẩm trên màn hình vừa */
+    }
+}
+
+@media (max-width: 900px) {
+    .section-six .inner-box {
+        width: calc(33.333% - 7px); /* 3 sản phẩm trên tablet lớn */
+    }
+}
+
+@media (max-width: 768px) {
+    .section-six .inner-box {
+        width: calc(50% - 5px); /* 2 sản phẩm trên tablet */
+    }
+    
+    .section-six .inner-wrap {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-six .inner-box {
+        width: 100%; /* 1 sản phẩm trên mobile */
+    }
+    
+    .section-six .inner-wrap {
+        gap: 15px;
+    }
+}
+
+
+/* End Section six */
+
+/* Section Seven */
+
+.section-seven .inner-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-one);
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.section-seven .inner-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.section-seven .inner-form input[type="email"]{
+    padding: 12px 32px;
+    font-size: 18px;
+    border-radius: 45px;
+    border:none;
+    width: 30%;
+
+}
+
+.section-seven .inner-form input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.section-seven .inner-form input::placeholder{
+    color:var(--color-text);
+    font-size: 18px;
+    padding:15px 0;
+
+}
+/* End Section Seven */
+
+
+/* End Section-eight*/
+
+.section-eight .inner-title{
+    color:var(--color-one);
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom:40px;
+}
+
+.section-eight .inner-box{
+   width: 1200px;
+   margin: 0 auto;
+    position: relative;
+
+}
+
+.section-eight .inner-box .inner-img img{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.section-eight .inner-box .video-play i{
+    color: white;
+    position: absolute;
+    z-index: 1;
+    border: none;
+    background: transparent;
+    font-size: 80px;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.section-eight .inner-box .video-play i:hover{
+    color: var(--color-one);
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-overlay:target {
+    display: flex;
+}
+
+.video-container {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.video-container iframe {
+    width: 80vw;
+    height: 45vw;
+    max-width: 1200px;
+    max-height: 675px;
+}
+
+.close-video {
+    position: absolute;
+    top: -30px;
+    right: -40px;
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    padding: 5px 10px;
+
+}
+
+.close-video:hover {
+    color: var(--color-two);
+}
+/* End Section-eight */
+
+/* End Section-nine*/
+
+.section-nine .inner-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section-nine .inner-title i{
+    font-size: 45px;
+    margin-right: 10px;
+    color: var(--color-two);
+}
+.section-nine .inner-title h2{
+    font-size: 48px;
+    color:var(--color-one);
+}
+
+.section-nine .inner-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
+
+.section-nine .inner-box{
+    width: calc(100% / 4 - 30px);
+    margin: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;;
+}
+
+.section-nine .inner-content{
+    padding: 30px;
+    text-align: left;
+    color:var(--color-one);
+    font-size: 17px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+   
+
+}
+
+.section-nine .inner-name{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--color-one);
+    margin-right: 175px;
+}
+
+.section-nine .star {
+    color: var(--color-two);
+    font-size: 22px;
+    margin-bottom: 30px;
+    margin-right: 175px;
+}
+/* End Section-nine */
+
+
+/* End Section-ten */
+.section-ten .container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.section-ten .inner-wrap{
+    width: 40%;
+    background: white;
+    text-align: center;
+}
+
+.section-ten .inner-wrap .inner-box{
+  text-align: left;
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+  padding-right: 142px;
+  border-bottom: #e0e0e0 1px solid;
+
+}
+
+.section-ten .inner-wrap .inner-box h2{
+    font-size: 48px;
+    color: var(--color-one);
+    margin-bottom: 20px;
+}
+
+.section-ten .inner-wrap .inner-box p{
+    font-size: 18px;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.button-four{
+    background-color: white;
+    color: var(--color-one);
+    border: 0.5px solid #e0e0e0;
+    font-weight: bold;
+    padding: 10px 40px;
+    margin-top: 20px;
+}
+
+.button-four:hover{
+    background-color: var(--color-one);
+    color: white;
+}
+
+.section-ten .inner-box-icon{
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.section-ten .inner-box-icon i{
+    font-size: 24px;
+    color: var(--color-text);
+}
+.section-ten .inner-map{
+    width: calc(60% - 30px);
+}
+.section-ten .inner-map iframe{
+    width: 100%;
+    height: 100%;
+}
+/* End Section-ten */
+
+/* End Section-eleven */
+
+.section-eleven .container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.section-eleven .inner-box{
+    text-align: left;
+}
+
+.section-eleven .inner-box p{
+    font-size: 17px;
+    color: white;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+/* End Section-eleven */
+
+/* End Section-twelve */
+
+.section-twelve .container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 400px;
+}
+
+.section-twelve .inner-title{
+    font-size: 17px;
+    color: var(--color-one);
+
+}
+.section-twelve .inner-wrap {
+    display: flex;
+
+}
+.section-twelve .inner-wrap img{
+     width: 45px;
+    height: auto;
+    padding: 0 0.2rem;
+    object-fit: contain;
+}
+/* End Section-twelve */
